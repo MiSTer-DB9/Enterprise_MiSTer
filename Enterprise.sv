@@ -271,10 +271,6 @@ localparam CONF_STR = {
 	"SC0,VHD,Mount SD;",
 	"S1,IMGDSK,Mount A:;",
 	"-;",
-	// [MiSTer-DB9-Pro BEGIN] - Saturn-first joy_type (canonical bit notation)
-	"O[127:126],UserIO Joystick,Off,Saturn,DB9MD,DB15;",
-	"O[125],UserIO Players,1 Player,2 Players;",
-	// [MiSTer-DB9-Pro END]
 	"F0,ROM,Load ROM;",
 	"-;",
 	"O[11:9],Available RAM,1 MB,2 MB,3 MB,64 KB,128 KB,256 KB,512 KB;",
@@ -294,6 +290,10 @@ localparam CONF_STR = {
 	
 	"R[0],Reset;",
 	"R[12],Cold Reset;",
+	// [MiSTer-DB9-Pro BEGIN] - Saturn-first joy_type (canonical bit notation)
+	"O[127:126],UserIO Joystick,Off,Saturn,DB9MD,DB15;",
+	"O[125],UserIO Players,1 Player,2 Players;",
+	// [MiSTer-DB9-Pro END]
 	"J,Fire 1,Fire 2;",
 	"V,v",`BUILD_DATE 
 };
